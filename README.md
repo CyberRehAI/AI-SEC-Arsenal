@@ -16,7 +16,7 @@ Currently in Phase 1 of my 2025–2027 roadmap: building hands-on projects to ma
   Jupyter notebook with FGSM/PGD evasion attacks on MNIST/CIFAR-10 + defenses.
 
 ## Journey & Roadmap
-Following a structured 2025–2027 plan focused on AI red teaming and cloud AI security.  
+Following a structured 2025(late)–2027 plan focused on AI red teaming and cloud AI security.  
 Weekly updates, attack demos, mitigation proofs, and metrics.  
 Inspired by OWASP LLM Top 10, Garak, DeepTeam, and recent CTFs (e.g., Lakera Agent Breaker).
 
@@ -25,8 +25,7 @@ Inspired by OWASP LLM Top 10, Garak, DeepTeam, and recent CTFs (e.g., Lakera Age
 - Tools: Garak, Foolbox (upcoming)
 
 ## Connect
-- LinkedIn: [your-link]  
-- X: [@yourhandle]  
-- Email: your.email@example.com
+- LinkedIn: To be Added
+- Email: dev.abd04@gmail.com
 
 Star ⭐ if you're into AI security red teaming!
