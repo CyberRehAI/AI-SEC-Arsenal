@@ -22,9 +22,12 @@ def get_registered_attacks() -> dict[str, type[BaseAttack]]:
         InstructionOverrideAttack,
         JailbreakComboAttack,
         MultiTurnAttack,
+        NarrativeRoleplayAttack,
         PayloadSplittingAttack,
+        PromptPrimingAttack,
         RecursiveReasoningAttack,
         RolePlayAttack,
+        SystemMaintenanceDecodeAttack,
         SystemPromptLeakAttack,
         TranslationAttack,
         UnicodeObfuscationAttack,
@@ -46,6 +49,9 @@ def get_registered_attacks() -> dict[str, type[BaseAttack]]:
         JailbreakComboAttack,
         DelimiterBreakAttack,
         AdversarialSuffixAttack,
+        NarrativeRoleplayAttack,
+        SystemMaintenanceDecodeAttack,
+        PromptPrimingAttack,
     ]
 
     return {attack.attack_name: attack for attack in attacks}

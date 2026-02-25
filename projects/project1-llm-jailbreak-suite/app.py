@@ -21,11 +21,10 @@ try:
 except ImportError:
     pass
 
-# Add parent directory to path so imports work when running from within llm_attack_simulator/
-project_root = Path(__file__).parent
-parent_dir = project_root.parent
-if str(parent_dir) not in sys.path:
-    sys.path.insert(0, str(parent_dir))
+# Add project root to path so "llm_attack_simulator" package is found
+project_root = Path(__file__).resolve().parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
 
 import streamlit as st
 import plotly.express as px
@@ -102,11 +101,12 @@ def render_sidebar() -> None:
     st.sidebar.divider()
 
     # Secret to protect (optional; if set, output containing it is blocked and counts as leak)
+    # Use a unique widget key so we can store the trimmed value in session_state without conflict
     secret_input = st.sidebar.text_input(
         "Secret to Protect",
         value=st.session_state.secret_to_protect,
         type="default",
-        key="secret_to_protect",
+        key="sidebar_secret_input",
         help="If set, mitigation blocks output containing this string. Used for leak detection.",
     )
     st.session_state.secret_to_protect = (
