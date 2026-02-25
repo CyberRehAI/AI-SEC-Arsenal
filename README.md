@@ -9,7 +9,7 @@ Currently in Phase 1 of my 2025–2027 roadmap: building hands-on projects to ma
 ## Current Projects
 - **Project 1: LLM Jailbreak Defense Suite**  
   Interactive Streamlit app demonstrating 15+ jailbreak techniques (DAN, encoding, multi-turn, CoT manipulation, etc.) with mitigation layers and metrics dashboard.  
-  Goal: 85%+ attack success pre-mitigation → <5% post-mitigation.  
+  Goal: Successfull prompts injections pre-mitigation → <5% post-mitigation.  
   [Live Demo](https://ai-sec-arsenal-nfx3dylsawsaepym8qs8hc.streamlit.app) | [Code → projects/project1-llm-jailbreak-suite](projects/project1-llm-jailbreak-suite)
 
 - **Project 2: Adversarial ML Attack Simulator** (in progress)  
